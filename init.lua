@@ -133,13 +133,13 @@ if minetest.get_modpath("default") then
    })
 end
 
-if minetest.get_modpath("mcl") then
+if minetest.get_modpath("mcl_core") then
    minetest.register_craft({
          output = "dolly:dolly",
          recipe = {
-            { "default:stick", "", "default:stick" },
-            { "default:stick", "", "default:stick" },
-            { "default:steel_ingot", "default:steel_ingot", "default:steel_ingot"}
+            { "mcl_core:stick", "", "mcl_core:stick" },
+            { "mcl_core:stick", "", "mcl_core:stick" },
+            { "mcl_core:iron_ingot", "mcl_core:iron_ingot", "mcl_core:iron_ingot"}
          }
    })
 end
